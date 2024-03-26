@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script src="app.js" defer></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div>
+      <form class="form-user" method="post" action="insert_user.php">
+        <h1>User form :</h1>
+        <div class="form-container">
+          <div class="form-user-group">
+            <label class="form-label" for="username">Username</label
+            ><input
+              type="text"
+              name="username"
+              id="username"
+              placeholder="..."
+            />
+          </div>
+          <div class="form-user-group" class="form-user-group">
+            <label class="form-label"> Password</label
+            ><input
+              type="text"
+              name="password"
+              id="password"
+              placeholder="..."
+            />
+          </div>
+          <div class="form-user-group">
+            <p>sexe</p>
+            <div class="sexe-check-container">
+              <div>
+                <input type="radio" name="sexe" id="male" value="male" />
+                <label for="male">Male</label>
+              </div>
+              <div>
+                <input type="radio" name="sexe" id="female" value="female" />
+                <label for="female">Female</label>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button type="submit" onclick="handleSubmit()" id="add">
+          add user
+        </button>
+      </form>
+      <div class="user-display-container">
+        <div class="user-display"></div>
+      </div>
+    </div>
+  </body>
+</html>

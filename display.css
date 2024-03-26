@@ -1,0 +1,19 @@
+.user-display-container {
+  height: 0;
+  border: solid 1px black;
+}
+.user-display {
+  width: 100%;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.user-display > ul {
+  list-style: decimal;
+  width: calc(100% / 4);
+  max-width: 141px;
+  border: 1px black solid;
+  color: blue;
+  padding-right: 2px;
+}
